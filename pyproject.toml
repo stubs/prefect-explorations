@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "prefect-explorations"
+version = "0.1.0"
+description = "Toying with non-cron schedule downstream deployments"
+authors = ["Aaron Gonzalez <a.gonzalez979@gmail.com>"]
+readme = "README.md"
+packages = [{include = "prefect_explorations"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+dbt-duckdb = "^1.5.2"
+prefect-dbt = "^0.3.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
