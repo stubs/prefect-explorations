@@ -15,7 +15,8 @@ def export():
     with open("/tmp/data.json", "w") as fout:
         for row in list_of_prods:
             fout.write(json.dumps(row) + "\n")
-    # run_deployment(name="dbt-command-flow/dbt_downstream_model", timeout=0)
+
+    run_deployment(name="dbt-command-flow/dbt_downstream_model", timeout=0)
 
 
 if __name__ == "__main__":
