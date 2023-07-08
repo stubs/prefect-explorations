@@ -1,8 +1,0 @@
-version: 2
-
-sources:
-  - name: external_sources
-    meta:
-      external_location: "/tmp/data.json"
-    tables:
-      - name: raw_products
